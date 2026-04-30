@@ -1,4 +1,18 @@
+# 💬 ChatFlow
 
+Real-time chat app built with Next.js, Socket.io, Express, and TypeScript.
+
+🌐 **Live Demo:** [chatflow-mgv6.vercel.app](https://chatflow-mgv6.vercel.app)
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** Next.js, TypeScript, Tailwind CSS
+- **Backend:** Node.js, Express, Socket.io
+- **Deployment:** Vercel (frontend) + Render (backend)
+
+---
 
 ## 🚀 Getting Started
 
@@ -7,22 +21,19 @@
 - npm
 
 ### 1. Clone the repository
-
 ```bash
 git clone https://github.com/abdallah-bazia/chatflow.git
 ```
 
 ### 2. Start the Socket.io server
-
 ```bash
-cd chatflow-server
+cd server
 npm install
-npx tsx src/server.ts
+npx tsx server.ts
 # Server runs on http://localhost:3001
 ```
 
 ### 3. Start the Next.js frontend
-
 ```bash
 cd chatflow
 npm install
@@ -31,7 +42,6 @@ npm run dev
 ```
 
 ### 4. Open the app
-
 Go to [http://localhost:3000](http://localhost:3000), pick a username, choose a room and start chatting!
 
 > To test real-time features, open two browser tabs with different usernames in the same room.
