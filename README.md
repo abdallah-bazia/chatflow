@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm
+
+### 1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/abdallah-bazia/chatflow.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Start the Socket.io server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd chatflow-server
+npm install
+npx tsx src/server.ts
+# Server runs on http://localhost:3001
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Start the Next.js frontend
 
-## Learn More
+```bash
+cd chatflow
+npm install
+npm run dev
+# App runs on http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Open the app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Go to [http://localhost:3000](http://localhost:3000), pick a username, choose a room and start chatting!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> To test real-time features, open two browser tabs with different usernames in the same room.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔌 Socket.io Events
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Event | Direction | Description |
+|---|---|---|
+| `join` | Client → Server | Join a room with username |
+| `send_message` | Client → Server | Send a message to the room |
+| `typing` | Client → Server | Broadcast typing status |
+| `message` | Server → Client | Receive a new message |
+| `history` | Server → Client | Receive last 50 messages on join |
+| `room_users` | Server → Client | Updated list of online users |
+
+---
+
+## 👤 Author
+
+**Abdallah Bazia**
+- GitHub: [@abdallah-bazia](https://github.com/abdallah-bazia)
+- Portfolio: [portfolio-jet-three-82.vercel.app](https://portfolio-jet-three-82.vercel.app)
