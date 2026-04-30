@@ -3,7 +3,7 @@
 Real-time chat app built with Next.js, Socket.io, Express, and TypeScript.
 
 🌐 **Live Demo:** [chatflow-mgv6.vercel.app](https://chatflow-mgv6.vercel.app)
-
+**Note:**   For the first message Render servers will take 30 secondes to start
 ---
 
 ## 🛠 Tech Stack
