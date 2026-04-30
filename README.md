@@ -14,6 +14,13 @@ Real-time chat app built with Next.js, Socket.io, Express, and TypeScript.
 
 ---
 
+## 🌍 Deployment
+
+- **Frontend:** [chatflow-mgv6.vercel.app](https://chatflow-mgv6.vercel.app) (Vercel)
+- **Backend API:** [chatflow-og5q.onrender.com](https://chatflow-og5q.onrender.com) (Render)
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
