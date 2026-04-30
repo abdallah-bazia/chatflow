@@ -10,9 +10,10 @@ const httpServer = createServer(app);
 
 const io = new Server(httpServer, {
   cors: {
-origin: "https://chatflow-mgv6.vercel.app",
-  methods: ["GET", "POST"],
-},
+    origin: "https://chatflow-mgv6.vercel.app",
+    methods: ["GET", "POST"],
+  },
+});
 
 // ── Types ──────────────────────────────────────────────
 interface User {
