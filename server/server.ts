@@ -137,7 +137,7 @@ app.get("/", (_req, res) => {
   res.json({ status: "ChatFlow server running", rooms: ROOMS, users: users.size });
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 httpServer.listen(PORT, () => {
   console.log(`🚀 ChatFlow server running on http://localhost:${PORT}`);
 });
