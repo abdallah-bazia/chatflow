@@ -4,7 +4,7 @@ let socket: Socket | null = null;
 
 export const getSocket = (): Socket => {
   if (!socket) {
-    socket = io("http://localhost:3001", {
+    socket = io("https://chatflow-og5q.onrender.com", {
       autoConnect: false,
     });
   }
